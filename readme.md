@@ -1,215 +1,135 @@
-./ : 현재 작업하고 있는 폴더
+-----------------------------
 
+#### 각오
+
++ 수업에 1000% 집중하기
++ 출석률 관리하기
++ 그 날 배운 내용은 꼭 복습해서 내 지식으로 만들기
++ 스터디 활용해서 반 친구들과 함께 자격증 취득하기
+
+-------------------------------------------
+
+#### 오늘 배운 내용
+
+Git, vsCode, typora
+
+CLI(Commnad Line)
+/GUI(Graphic Use)
+
+1) windows
+- Git 설치 후 윈도우 탐색기를 엽니다. ( 윈도우키 + e )
+- C:/사용자(Users)/현재 사용자 계정 로 이동합니다.
+- 폴더 내 빈 공간에서 마우스 우클릭 후 Git Bash Here 를 클릭합니다.
+- Git Bash 창에 아래 화면처럼 HOME 폴더를 의미하는 ~ 표시만 있다면 정상입니다.
+( ~ 표시가 없거나, 뒤에 글자가 추가적으로 나타난다면 잘못된 경로일 수 있습니다.)
+
+
+2) mac
+- Spotlight (검색)를 엽니다. (화면 우측 상단의 돋보기 혹은 command + spacebar )
+- terminal 을 검색하여 터미널을 엽니다.
+- 터미널을 열면 기본적으로 HOME 폴더로 경로가 설정 되어 있습니다. 
+   ( /Users/현재 사용자 계정 )
+- open . 라고 입력하여 HOME 폴더를 엽니다.
+
+
+./ :현재 작업하고 있는 폴더
 ../ : 현재 작업하고 있는 폴더의 부모 폴더
-
 ~: 홈디렉토리
 
- 
+<CLI>
+cd : change directory
+ls: list segments(현재 작업 중인 디렉토리의 폴더/파일 목록을 출력
+mkdir: make directory
+touch: 파일 생성
+mv: move
+rm: remove
+start (open): 파일 편집기 실행
 
-Ls : list segments(현재 작업 중인 디렉토리의 폴더/파일 목록을 출력)
 
-Mkdir : make directory
+이동하고자 하는 folder 의 이름이 newfolder> 인 경우에는
+mv text1.txt newfolder
+이동하고자 하는 folder 의 이름이 <new folder> 인 경우에는
+mv text1.txt 'new folder'
+mv text1.txt "new folder"
 
-Touch
 
-Mv: move
+option / 인수
 
-Start
-
-Option / 인수
-
- 
 
 유용한 단축키
-
 위, 아래 방향키 : 과거에 작성했던 명령어 조회
+tab : 폴더/파일 이름 자동 완성
+ctrl + a : 커서가 맨 앞으로 이동
+ctrl + e : 커서가 맨 뒤로 이동
+ctrl + w : 커서가 앞 단어를 삭제
+ctrl + l : 터미널 화면을 깨끗하게 청소 (스크롤 올리면 과거 내역 조회 가능)
+ctrl + insert : 복사
+shift + insert : 붙여넣기
 
-Tab : 폴더/파일 이름 자동 완성
 
-Ctrl + a : 커서가 맨 앞으로 이동
+파이썬 언어를 개발하기위한 개발 환경:
+  .py : 메모장으로 텍스트 파일 => interpreter/파이썬
+  .hwp/.doc/.mp3/.jpg : 메모장
+  vsCode / 파이참
 
-Ctrl + e : 커서가 맨 뒤로 이동
+마크다운:
+   일반 테스트 기반의 (경량) 마크업 언어
+   .md
 
-Ctrl + w : 커서가 앞 단어를 삭제
 
-Ctrl + l : 터미널 홤녀을 깨끗하게 정리
+장점: 직관적이고 쉽다.
+        관리가 쉽다.
+        지원 가능한 플랫폼, 프로그램 다양하다.
+        
+단점: 표준이 없다.
+        HTML 마트업 기능을 대신하지는 못한다.
 
-Ctrl + insert : 복사
+git 명령어
 
-Shift + insert : 붙여넣기
+working directory: 로컬의 사용자 작업이 일어나는 곳
+staging area: 커믹을 위한 파일 및 폴더가 추가되는 곳
+repository(commits): 변경사항(커밋)을 저장하는 곳
 
- 
+1) 커밋기록자를 등록
+git config --global user.name ""
+git config --global user.email ""
 
-VS코드 : IDE(종합개발환경)
+git config --global -l
+git config --global --list
 
-우리는 5개월동안 종합파이썬 언어를 개발하기 위한 개발 환경:
+2) local directory를 git으로 관리한다고 정의
+git init
 
-VscCode / 파이참 두가지를 쓸거예요.
+3) git 상태 표시
+   git status
 
-.py : 메모장으로 열리는 텍스트 파일 => 컴퓨터가 이해할 수 있는 언어로 바꾸는 방법. Compile(interpreter) 해석해주는 프로그램을 파이썬이라고 부릅니다.
-
-Typora는 메모장 같은 애인데 기능이 조금 더 있어요.
-
-Md는 마크다운이라는 일종의 언어중에 하나. 뭐 이렇게 #모양 표시해두는거 있는데 이걸 마크다운이라고 합니다. 나중에 우리가 기호를 많이 써야되는데 이걸 편하게 해주는게 타이포라.
-
- 
-
-마크다운 : 일반 텍스트 기반의 (경량) 마크업 언어
-
- 
-
-타이포라 작성 방식
-
-\# 제목1
-
-\## 제목2
-
-\### 제목3
-
-\#### 제목4
-
-\##### 제목5
-
-\###### 제목6
-
- 
-
-Tab 가지고 순서 있는거 없는거 만들어보기
-
- 
-
-**볼드체**
-
-__볼드체__
-
-~~취소선~~
-
- 
-
-인용할 때는 `(1옆에 빽틱) 사용하기
-
-파이썬에 해당하는 인용 블록 사용하고 싶으면 ```(빽틱 3개)
-
- 
-
-링크 걸려면
-
-[표시할 글자](링크 주소)
-
- 
-
-이미지 파일
-
- 
-
-원격 저장소(github) 은 약간 public한 느낌? 전세계 모든 사람들이 한 주소로 접속할 수 있음. 깃허브에다가 올리면 나중에 증명도 가능하고 등등… 오늘 내일은 깃허브 쓸꺼긴 함
-
-Gitlab은 한 개가 아니라 각각 다 주소와 서버가 다름. 포팅해서 쓰고 있음. 단체에 소속돼있는 동안에만 쓰는 거. 나가면 아마 권한이 박탈당할 듯? 근데 5월 말까지는 깃랩 쓸꺼임 ㅋ
-
- 
-
-**깃**
-
-분산버전관리 프로그램
-
-버전 : 컴퓨터 소프트웨어의 특정 상태.
-
-버전관리 -> 레포트 최종 -> 진짜최종 -> 진짜진짜최종 -> 진짜진짜진짜리얼최종
-
-마지막 파일만 남기고, 나머지는 변경사항만 기록하는 st
-
-분산은 백업을 위해 깃을 이용해서 나누어 관리한다는 의미
-
- 
-
-깃허브
-
-분산버전관리의 서버 + 포트폴리오를 관리하기 위함
-
- 
-
-깃 같은 경우, Working directory -> staging area -> commits -> commits 순으로 이어져야 함.
-
-Working directory : 로컬의 사용자 작업이 일어나는 곳
-
-Staging area : 커밋을 위한 파일 및 폴더가 추가되는 곳
-
-Repository(commits): 변경사항(커밋)을 저장하는 곳
-
-
-
- 
-
-\2) local directory를 git으로 관리한다고 정의
-
-Git init
-
- 
-
-\3) git 상태 표시
-
-Git status
-
- 
-
-\-   Untracked: git이 관리하지 않는 파일
-
-\-   Tracked: git이 관리하는 파일
-
- 
+   - untracked: git 이 관리하지 않는 파일
+   - tracked: git이 관리하는 파일
 
 --- file 생성( touch a.txt)
-
-\4) git add(staging)
-
+4) git add(staging)
 git add 파일이름(폴더이름/)
+git add .   => 전체 다
 
-git add .  => 전체 다
+5) git commit
+git commit -m "메시지"
 
- 
-
-\5) git commit
-
-Git commit -m “메시지”
-
- 
-
-\6) git log (commit log)
-
---online : 한 줄로 축약해서 보여줍니다.
-
+6) git log (commit log)
+--oneline : 한 줄로 축약해서 보여줍니다.
 --graph : 브랜치와 머지 내역을 그래프로 보여줍니다.
-
 --all : 현재 브랜치를 포함한 모든 브랜치의 내역을 보여줍니다.
-
 --reverse : 커밋 내역의 순서를 반대로 보여줍니다. (최신이 가장 아래)
-
 -p : 파일의 변경 내용도 같이 보여줍니다.
+-2 : 원하는 갯수 만큼의 내역을 보여줍니다. (2 말고 임의의 숫자 사용 가능)
 
--2 : 원하는 개수 만큼의 내역을 보여줍니다. (2 말고 임의의 숫자 사용 가능)
+7) 원격 저장소 등록
+git remote add <이름><주소>
+    * 보통 remote연결이 한 개인 경우 origin을 사용함.
+git remote -v => repository 확인
 
- 
+8) 원격 저장소 삭제
+git remote rm <이름>
+git remote remove <이름>
 
-\7) 원격 저장소 등록
-
-Git remote add <이름><주소>
-
-​      *보통 remote연결이 한 개인 경우 이름은 origin을 많이 씀
-
-Git remote -v => repository 확인
-
- 
-
-\8) 원격 저장소 삭제
-
-Git remote rm <이름>
-
-Git rm <이름>
-
- 
-
-\9) 원격 저장소에 업로드
-
-Git push <저장소 이름><브랜치 이름>
-
-나 같은 경우에는 git push origin master 이었음.
+9) 원격 저장소에 업로드
+git push <저장소 이름><브렌치 이름>
